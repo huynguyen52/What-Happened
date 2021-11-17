@@ -1,0 +1,57 @@
+@import "../../styles/abstracts/color";
+@import "../../styles/abstracts/fonts";
+
+.footer {
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: $blackTwo;
+    &__right {
+      display: flex;
+      gap: 95px;
+      .footer-item__title {
+        font-weight: 600;
+        line-height: 2.86;
+      }
+    }
+    .footer-item__desc {
+      font-family: "Noto Sans KR", sans-serif;
+    }
+  }
+
+  &-bottom {
+    width: 100%;
+    margin-top: 6rem;
+    padding-top: 2.2rem;
+    border-top: 1px solid $whiteThree;
+    display: flex;
+    justify-content: space-between;
+    .copy-right {
+      max-width: 50%;
+      flex: 1 1 50%;
+      @include textStyle8;
+      font-size: 1.4rem;
+      color: $greyish;
+    }
+    .socials {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2rem;
+      &-item {
+        list-style: none;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 774px) {
+  .footer {
+    &-main {
+      &__right {
+        gap: 6rem;
+      }
+    }
+  }
+}

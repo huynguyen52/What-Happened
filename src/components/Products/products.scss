@@ -1,0 +1,12 @@
+.products {
+  padding: 14.2rem 0;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    justify-content: space-between;
+  }
+  .btn.btn--primary {
+    margin: auto;
+  }
+}

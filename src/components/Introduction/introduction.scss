@@ -1,0 +1,30 @@
+@import "../../styles/abstracts/color";
+@import "../../styles/abstracts/fonts";
+
+.introduction {
+  width: 100%;
+  height: 576px;
+  background-image: url("../../images/introduction-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  &__title {
+    @include textStyle5;
+    color: $white;
+    text-align: left;
+    margin-bottom: 5.8rem;
+  }
+  &__desc {
+    @include textStyle11;
+    color: $white;
+    text-align: left;
+    max-width: 665px;
+  }
+}

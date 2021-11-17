@@ -1,0 +1,48 @@
+@import "../../styles/abstracts/color";
+@import "../../styles/abstracts/fonts";
+
+.best-product-item {
+  width: 33.3333%;
+  max-width: 523px;
+  position: relative;
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__tag {
+    width: 20%;
+    max-width: 92px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  &__label {
+    display: flex;
+    width: 62%;
+    max-width: 369px;
+    border: 3px solid #020001;
+    padding: 0.7rem 0.8rem 0.6rem 2.7rem;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    @include textStyle;
+    text-overflow: ellipsis;
+    background-color: white;
+  }
+}

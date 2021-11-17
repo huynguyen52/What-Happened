@@ -1,0 +1,79 @@
+@import "../../styles/abstracts/color";
+@import "../../styles/abstracts/fonts";
+
+.brand-story {
+  position: relative;
+  width: 100%;
+  background-color: $cerulean;
+  padding-bottom: 170px;
+  background-image: url("../../images/object-05.png"),
+    url("../../images/object-04.png"), url("../../images/object-06.png"),
+    url("../../images/object-07.png"), url("../../images/object-01.png"),
+    url("../../images/object-03.png"), url("../../images/object-02.png"),
+    url("../../images/line.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat;
+  background-position: 102% 75%, 106% 43%, 0% 72%, 11% 75%, 10% 30%, 90% 15%,
+    85% 10%, 10% -22%;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 145px;
+  }
+  &__title {
+    color: $sunYellow;
+    text-transform: uppercase;
+    height: 3.7rem;
+    line-height: 3.7rem;
+  }
+  &__desc {
+    margin-top: 4.9rem;
+    font-family: "Noto Sans KR", sans-serif;
+    color: $sunYellow;
+    max-width: 665px;
+  }
+  &__content {
+    display: flex;
+    margin-top: 77px;
+  }
+  .rectangle {
+    position: relative;
+    margin: auto;
+    display: inline-block;
+
+    &__img {
+      display: block;
+      width: 100%;
+      max-width: 1250px;
+    }
+    &__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48%;
+      max-width: 48%;
+      transform: translateY(-50%);
+    }
+    &__header {
+      margin-bottom: 47px;
+    }
+    &__title {
+      color: $blackThree;
+      text-align: left;
+      height: 3.7rem;
+      line-height: 2.5rem;
+    }
+    &__desc {
+      margin-top: 3.9rem;
+      max-width: 528px;
+      font-family: "Noto Sans KR", sans-serif;
+      font-weight: 300;
+      text-align: left;
+      color: $blackThree;
+    }
+  }
+}
