@@ -282,7 +282,7 @@ body {
 
   .title--bigger,
   .title--normal {
-    font-size: 4rem;
+    font-size: 3.3rem;
   }
 
   .best-product {
@@ -308,13 +308,13 @@ body {
       flex-direction: column;
       gap: 2rem;
       &__right {
-        gap: 5rem;
+        gap: 1rem;
       }
     }
     &-wrapper {
       display: flex;
       justify-content: space-between;
-      gap: 5rem;
+      gap: 2rem;
       .footer-main,
       .footer-bottom {
         flex: 1 1 50%;
